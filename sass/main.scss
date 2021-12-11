@@ -1,3 +1,8 @@
-body{
-    background-color: tomato;
-}
+@import './utils/variables';
+@import './component/logo';
+@import './component/_navigation';
+@import './component/contact';
+@import './component/hero';
+
+
+@import './component/adress-footer';
