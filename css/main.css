@@ -296,19 +296,11 @@ body {
   height: 70px;
 }
 
-.work-list {
-  display: flex;
-}
-
-.work-list .example + .example {
-  margin-left: 30px;
-}
-
 .work {
   padding-bottom: 94px;
 }
 
-.work-title {
+.work__title {
   color: var(--title-text-color);
   text-align: center;
   font-size: 36px;
@@ -318,11 +310,15 @@ body {
   margin-bottom: 50px;
 }
 
-.example {
+.work-list {
+  display: flex;
+}
+
+.work-list__example {
   position: relative;
 }
 
-.work-list-comment {
+.work-list__comment {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -333,11 +329,15 @@ body {
   padding: 27px 82px;
 }
 
-.work-list-text {
+.work-list__text {
   position: absolute;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
   width: 370px;
+}
+
+.work-list__example + .work-list__example {
+  margin-left: 30px;
 }
 
 .team-section {
