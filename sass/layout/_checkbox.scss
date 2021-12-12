@@ -1,0 +1,34 @@
+.licence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.licence-text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+
+}
+.licence-link{
+    color: var(--akcent-color);
+    text-decoration: underline;
+}
+.licence-icon{
+    fill: var(--primeri-white-color);
+}
+.licence-input-span{
+    width: 16px;
+    height: 15px;   
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.licence-input:checked + .licence-input-span{
+    background-color: var(--akcent-color);
+    border: none;
+}

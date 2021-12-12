@@ -1,4 +1,8 @@
+@import './base/reset';
 @import './utils/variables';
+@import './component/container';
+@import './component/visually-hidden';
+@import './component/social';
 @import './layout/logo';
 @import './layout/navigation';
 @import './layout/contact';
@@ -7,7 +11,9 @@
 @import './layout/work-section';
 @import './layout/team';
 @import './layout/clients';
-@import '';
-@import '';
-
+@import './layout/social-decoration';
+@import './layout/filtr';
+@import './layout/modal';
+@import './layout/checkbox';
+@import './layout/subscribe';
 @import './layout/adress-footer';

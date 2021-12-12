@@ -1,0 +1,109 @@
+.filtr-project{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtr-content{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+.btn-filtr{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn-filtr .btn-item + .btn-item{
+    margin-left: 8px;
+}
+.button-filtr{
+    background-color:#F5F4FA;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    display: inline-block;
+    border-radius: 4px;
+    border-style: none;
+    padding: 6px 22px;
+    cursor: pointer;
+    transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
+}
+.button-filtr:hover, 
+.button-filtr:focus{
+    background-color:var(--akcent-color);
+    color: #FFFFFF;
+    box-shadow:0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),0px 3px rgba(0, 0, 0, 0.1);
+}
+.card-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:calc(-1* var(--card-set-gap));
+    margin-top: calc(-1* var(--card-set-gap));
+
+}
+.card-set>.item{
+    flex-basis: calc(100% / 3 -  var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+.card{
+    display: block;
+
+}
+.card:hover,
+.card:focus{
+    box-shadow:
+        1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+
+.card-title{
+    color: var(--title-text-color);
+    font-weight: 700;   
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    
+}
+.card-text{
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+}
+.card-content{
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+
+}
+.card-thumb{
+    position: relative;
+    overflow: hidden;
+}
+.card-comment{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primeri-white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: transform 500ms var(--cubic-bezier);
+
+}
+.card:hover .card-comment,
+.card:focus .card-comment{
+    transform: translateY(0);
+    
+}
