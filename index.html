@@ -7,7 +7,6 @@
     <title>homework-07</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
@@ -113,7 +112,7 @@
         </section>
         <!-- наша команда -->
         <section class="team-section">
-            <div class="team container">
+            <div class="container">
                 <h2 class="team-title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="item-card">
@@ -383,15 +382,25 @@
                         </div>
 
 <!-- checkbox -->
-                            <div class="modal-form-field">
-                                <label class="licence"  name="licence">
-                                    <input type="checkbox" name="licence" class="licence-input visually-hidden">
-                                    <span class="licence-input-span"><svg class="licence-icon" width="16" height="15">
-                                        <use href="./images/icon.svg#icon-chek"></use>
-                                    </svg></span>
-                                    <p class="licence-text">Соглашаюсь с рассылкой и принимаю <a href="#" class="licence-link">Условия договора</a></p>
-                                </label>
-                            </div>
+                                <div class="modal-form-comment">
+                                    <input type="checkbox" name="checkbox" id="licence" class="input-check visually-hidden">
+                                    <label for="licence" class="label-text">
+                                        <span>
+                                            <svg class="icon-chek"  width="16" height="15">
+                                                <use href="./images/icon.svg#icon-chek"></use>
+                                            </svg>
+                                        </span>
+                                        Соглашаюсь с рассылкой и принимаю 
+                                        <a href="#" class="chek-link-text">Условия договора</a>
+                                    </label>
+                                </div>
+
+
+
+
+
+
+                            
                         <button type="submit" class="button modal-btn">Отправить</button>
                     </form>
             </div>

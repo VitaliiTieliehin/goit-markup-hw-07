@@ -1,5 +1,7 @@
 .work-list{
     display:flex;
+    .example +.example{
+        margin-left: 30px;}
 }
 .work{
     padding-bottom: 94px;
@@ -13,9 +15,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
-.work-list .example +.example{
-    margin-left: 30px;
-}
+
 .example{
     position: relative;
 }

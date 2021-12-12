@@ -27,23 +27,21 @@
     line-height: 1.25;
     padding: 15px 16px;
     color: var(--primeri-white-color);
-    
+    &::placeholder{
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
-.subscribe-input::placeholder{
-    color: rgba(255, 255, 255, 0.6);
 
-}
 .subscribe-btn{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 12px;
+    &:hover,
+    &:focus{
+    background-color: #0f5996;}
 }
-.subscribe-btn:hover,
-.subscribe-btn:focus{
-    background-color: #0f5996;
 
-}
 .modal-icon{ 
     margin-left: 10px;
     fill: var(--primeri-white-color);

@@ -11,10 +11,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-}
-
-.btn-filtr .btn-item + .btn-item{
-    margin-left: 8px;
+    .btn-item + .btn-item{
+    margin-left: 8px;}
 }
 .button-filtr{
     background-color:#F5F4FA;
@@ -30,36 +28,37 @@
     padding: 6px 22px;
     cursor: pointer;
     transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
-}
-.button-filtr:hover, 
-.button-filtr:focus{
+    &:hover, 
+    &:focus{
     background-color:var(--akcent-color);
     color: #FFFFFF;
-    box-shadow:0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),0px 3px rgba(0, 0, 0, 0.1);
+    box-shadow:0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),0px 3px rgba(0, 0, 0, 0.1);}
 }
 .card-set{
     display: flex;
     flex-wrap: wrap;
     margin-left:calc(-1* var(--card-set-gap));
     margin-top: calc(-1* var(--card-set-gap));
+    .item{
+        flex-basis: calc(100% / 3 -  var(--card-set-gap));
+        margin-left: var(--card-set-gap);
+        margin-top: var(--card-set-gap);
+    }
 
 }
-.card-set>.item{
-    flex-basis: calc(100% / 3 -  var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
-}
+
 .card{
     display: block;
-
-}
-.card:hover,
-.card:focus{
+    &:hover,
+    &:focus{
     box-shadow:
         1px 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06),
         0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        .card-comment{
+        transform: translateY(0);}
     }
+}
 
 .card-title{
     color: var(--title-text-color);
@@ -82,7 +81,6 @@
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-
 }
 .card-thumb{
     position: relative;
@@ -100,10 +98,4 @@
     padding: 63px 24px;
     transform: translateY(100%);
     transition: transform 500ms var(--cubic-bezier);
-
-}
-.card:hover .card-comment,
-.card:focus .card-comment{
-    transform: translateY(0);
-    
 }
