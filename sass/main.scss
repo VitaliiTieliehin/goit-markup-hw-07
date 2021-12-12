@@ -1,8 +1,13 @@
 @import './utils/variables';
-@import './component/logo';
-@import './component/_navigation';
-@import './component/contact';
-@import './component/hero';
+@import './layout/logo';
+@import './layout/navigation';
+@import './layout/contact';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/work-section';
+@import './layout/team';
+@import './layout/clients';
+@import '';
+@import '';
 
-
-@import './component/adress-footer';
+@import './layout/adress-footer';
