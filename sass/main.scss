@@ -1,7 +1,8 @@
 @import './base/reset';
+@import './base/common';
 @import './utils/variables';
 @import './component/container';
-@import './component/visually-hidden';
+@import './utils/visually-hidden';
 @import './component/social';
 @import './layout/logo';
 @import './layout/navigation';
