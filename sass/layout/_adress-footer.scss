@@ -3,7 +3,7 @@
     align-items: baseline;
 
 }
-.adres-section{
+.footer__adres-section{
     margin-top: 20px;
     color: #FFFFFF;
     font-style: normal;
@@ -11,20 +11,19 @@
     font-size: 14px;
     line-height: 1.71;   
     letter-spacing: 0.03em; 
-    .footer-link{
-        margin-top: 9px;
-        color: rgba(255, 255, 255, 0.6);   
-        display: block;
-        transition: color 250ms var(--cubic-bezier);
-    }
+    
 }
-.footer-link:hover,
-.footer-link:focus{
-    color:var(--akcent-color);
-}
-
 .footer-section{
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+}
+.footer__link{
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6);   
+    display: block;
+    transition: color 250ms var(--cubic-bezier);
+    &:hover,
+    &:focus{
+    color:var(--akcent-color);}
 }
