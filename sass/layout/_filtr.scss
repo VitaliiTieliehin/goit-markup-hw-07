@@ -19,10 +19,12 @@
 .btn-filtr__button-filtr{
     background-color:#F5F4FA;
     color: var(--title-text-color);
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
+
     font-family: inherit;
     display: inline-block;
     border-radius: 4px;
@@ -63,18 +65,11 @@
 
 .card-content__card-title{
     color: var(--title-text-color);
-    font-weight: 700;   
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    
+    @include font(18px, 2, 700, 0.06em);
 }
 .card-content__card-text{
     color: var(--text-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
+    @include font(16px, 1.88, 400, 0.03em);
     margin-top: 4px;
 }
 .card-content{
@@ -91,9 +86,12 @@
     position: absolute;
     top: 0;
     left: 0;
+
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
+    letter-spacing: 0.03em;
+    
     color: var(--primeri-white-color);
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;

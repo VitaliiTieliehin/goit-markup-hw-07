@@ -52,11 +52,8 @@ cursor: pointer;
 
 .modal__title{
     display: block;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(20px, 1.15, 700, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color:var(--title-text-color);
     margin-bottom: 12px;
 
@@ -70,9 +67,7 @@ cursor: pointer;
 .modal-form-field__text{
     
     display: block;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include font(12px, 1.17, 400, 0.01em);
     color:var(--text-color);
     margin-bottom: 4px;
 }
@@ -89,9 +84,7 @@ cursor: pointer;
 
 }
 .modal-form-comment__comment-text{
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(12px, 1.17, 400, 0.01em);
     color: var(--text-color);
 }
 
@@ -105,10 +98,7 @@ cursor: pointer;
     &:focus{
         border-color:var(--akcent-color);}
     &::placeholder{
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
+        @include font(12px, 1.17, 400, 0.01em);
         color: rgba(117, 117, 117, 0.5);}
             
 } 

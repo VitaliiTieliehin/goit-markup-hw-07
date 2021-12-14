@@ -13,17 +13,12 @@
     margin-right: auto;
     color:var(--title-text-color);
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(14px, 1.14, 700, 0.03em);
     margin-bottom: 10px;   
 }
 .features-list__text{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(14px, 1.71, 400, 0.03em);
+    
 }
 .features-list__list-item{
     width: 270px;

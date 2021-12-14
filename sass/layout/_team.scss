@@ -6,10 +6,7 @@
 }
 .team__title{
     color:var(--title-text-color);
-    font-size: 36px;
-    line-height: 1.17;
-    font-weight: 700;
-    letter-spacing: 0.03em;
+    @include font(36px, 1.17, 700, 0.03em);
     padding-top: 94px;
     padding-bottom: 50px;
     text-align: center;
@@ -35,22 +32,11 @@
 }
 .team-list__card{
     color: var(--title-text-color);
-    font-size: 16px;
-    font-weight: 500;
-    line-height:1.19 ;
+    @include font(16px, 1.19, 500, 0.03em);
 }
 .team-list__position{
     padding-top: 10px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-
+    @include font (16px, 1.19, 400, 0.03em);
 }
 .team-list__item-card +.team-list__item-card{
     margin-left: 30px;}
-
-    
-
-
-    

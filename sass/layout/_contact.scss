@@ -12,10 +12,7 @@
 
 .section-contact__cont-link{
     color: var(--primer-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(14px, 1.14, 500, 0.02em);
     align-items: center;
     transition: color 250ms linear;
     &:hover,

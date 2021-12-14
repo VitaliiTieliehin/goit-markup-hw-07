@@ -26,10 +26,7 @@
 
 // social footer
 .social-title-footer{
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-    line-height:1.14 ;
+    @include font(14px, 1.14, 700, 0.03em);
     text-transform: uppercase;
     color: var(--primeri-white-color);
 }

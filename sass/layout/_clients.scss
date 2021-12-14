@@ -3,10 +3,7 @@
     padding-bottom: 94px;
 }
 .clients__title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+    @include font(36px, 1.17, 700, 0.03em);
     margin-bottom: 50px;
     text-align: center;
     color:#212121;

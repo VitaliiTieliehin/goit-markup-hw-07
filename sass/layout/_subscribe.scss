@@ -8,10 +8,7 @@
     display: flex;
 }
 .subscribe__title{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(14px, 1.14, 700, 0.03em);
     text-transform: uppercase;
     color: var(--primeri-white-color);
     margin-bottom: 20px;
@@ -23,8 +20,9 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: transparent;
     border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font (16px, 1.25, 400, 0.03em);
+
+    
     padding: 15px 16px;
     color: var(--primeri-white-color);
     &::placeholder{

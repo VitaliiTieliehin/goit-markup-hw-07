@@ -1,9 +1,8 @@
 .logo{
     color:var(--akcent-color);
     font-family: Raleway,sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(26px, 1.19, 700, 0.03em);
+
 }
 .logo-black--color-dark{
     color: var(--title-text-color) ;
