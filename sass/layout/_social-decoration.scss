@@ -10,14 +10,12 @@
 .social-team__social-item{
     color:  #AFB1B8;
     transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
-
-}
-.social-team__social-item:focus,
-.social-team__social-item:hover{
+    &:focus,
+    &:hover{
     background-color: var(--akcent-color);
-    color: var(--primeri-white-color);
-
+    color: var(--primeri-white-color);}
 }
+
 .social-team__icon{
     width: 20px;
     height: 20px;
@@ -47,12 +45,13 @@
     color:  var(--primeri-white-color);
     background-color: #43444D;
     transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+    &:hover,
+    &:focus{
+        background-color: var(--akcent-color);
+    
+    }
 }
-.social-footer__item:hover,
-.social-footer__item:focus{
-    background-color: var(--akcent-color);
 
-}
 .social-footer__icon{
     width: 20px;
     height: 20px;

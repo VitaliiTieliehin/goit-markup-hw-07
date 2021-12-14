@@ -462,8 +462,7 @@ body {
   transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
 
-.social-team__social-item:focus,
-.social-team__social-item:hover {
+.social-team__social-item:focus, .social-team__social-item:hover {
   background-color: var(--akcent-color);
   color: var(--primeri-white-color);
 }
@@ -499,8 +498,7 @@ body {
   transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
 
-.social-footer__item:hover,
-.social-footer__item:focus {
+.social-footer__item:hover, .social-footer__item:focus {
   background-color: var(--akcent-color);
 }
 
