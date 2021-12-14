@@ -1,8 +1,32 @@
-.social-connect{
+// social-team
+.social-team{
     display: flex;
-    flex-direction: column;
-    margin-left: 70px;
+    justify-content: center;
+    margin-top: 16px;
 }
+.social-team__link +.social-team__link{
+    margin-left: 10px;
+}
+.social-team__social-item{
+    color:  #AFB1B8;
+    transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
+
+}
+.social-team__social-item:focus,
+.social-team__social-item:hover{
+    background-color: var(--akcent-color);
+    color: var(--primeri-white-color);
+
+}
+.social-team__icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+
+}
+
+
+// social footer
 .social-title-footer{
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -11,54 +35,32 @@
     text-transform: uppercase;
     color: var(--primeri-white-color);
 }
-
-.social.social-team-footer{
+.social-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-footer__link +.social-footer__link{
+    margin-left: 10px;
+}
+.social-footer__item{
     color:  var(--primeri-white-color);
     background-color: #43444D;
     transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
+.social-footer__item:hover,
+.social-footer__item:focus{
+    background-color: var(--akcent-color);
 
-.social-icon-footer{
+}
+.social-footer__icon{
     width: 20px;
     height: 20px;
     fill: currentColor;
 }
-.social-team-footer:hover,
-.social-team-footer:focus{
-    background-color: var(--akcent-color);
 
-}
-.social-footer{
-    margin-top: 20px;
+.social-subscribe{
     display: flex;
-    justify-content: center;
-
-}
-.social-link-footer +.social-link-footer{
-    margin-left: 10px;
-}
-.social.social-team{
-    color:  #AFB1B8;
-    transition: background-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
-
-}
-.social-icon{
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-
-}
-.social-team:focus,
-.social-team:hover{
-    background-color: var(--akcent-color);
-    color: var(--primeri-white-color);
-
-}
-.social-link +.social-link{
-    margin-left: 10px;
-}
-.social-list{
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
+    flex-direction: column;
+    margin-left: 70px;
 }
